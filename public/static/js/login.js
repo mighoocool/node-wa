@@ -18,8 +18,3 @@ layui.use('form',()=>{
         return false;
     })
 })
-
-$('#login-form').submit(e=>{
-    console.log(e)
-    e.preventDefault()
-})

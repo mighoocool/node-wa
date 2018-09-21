@@ -1,0 +1,15 @@
+$(function(){
+    $('#search').on('click',()=>{
+        $.ajax({
+            type:'POST',
+            dataType:'json',
+            url:'/spider/search',
+            data:{
+                url:'https://www.douban.com/note/623471280/',
+            },
+            success:(res)=>{
+                console.log(res)
+            }
+        })
+    })
+})

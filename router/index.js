@@ -2,6 +2,7 @@
 // const router = express.Router()
 import home from './home'
 import account from './account'
+import spider from './spider'
 
 // const setRouter = (app) =>{
 //     app.use('/',home)
@@ -10,4 +11,5 @@ import account from './account'
 export default (app) =>{
     app.use('/',home)
     app.use('/account',account)
+    app.use('/spider',spider)
 }
